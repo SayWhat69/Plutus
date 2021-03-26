@@ -5,17 +5,15 @@ A Bitcoin wallet collider that brute forces random wallet addresses
 # About This Fork
 
 Updated the chainstate database (March 15 2021)
-
-# Like This Project? Give It A Star
-
-[![](https://img.shields.io/github/stars/SayWhat69/Plutus.svg)](https://github.com/SayWhat69/Plutus)
+Fixed the memory usage, such an obvious bug, please give feedback in case I missed something.
 
 # Wanna Support Me?
 
 ```
-BTC: 16vp3EYZoP35MtdquQHxyhxT6ocbNFtw1K
-ETH: 0xD7C174Bd0B8b46700e0570a852180D16f3b16aa5
-LTC: MT2LsA7LHHsP2H84fhXBKWkU2B4ez7MerZ
+Please consider kind donation !
+
+BTC: bc1q5gkn0tln6su3tvwnld7xf7p20fjssaufles47d
+ETH: 0xD7A75bF1b64e302ad07b0843A9D295F9a9E3db8E
 ```
 
 # Dependencies
@@ -89,12 +87,8 @@ The memory consumption stack trace was made by using <a href="https://pypi.org/p
 
 # Recent Improvements & TODO
 
-- [X] Fixed typos/formatting
+- [X] Fixed memory use
 
-- [ ] Update database
-
-- [ ] Pickle loader
-
-- [ ] Try to fix Memory Error
+- [ ] See SayWhat69 for updates on database
 
 <a href="https://github.com/SayWhat69/Plutus/issues">Create an issue</a> so I can add more stuff to improve
