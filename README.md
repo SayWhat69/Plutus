@@ -87,6 +87,31 @@ This program uses approximately 2GB of RAM per CPU. Because this program uses mu
 
 The memory consumption stack trace was made by using <a href="https://pypi.org/project/memory-profiler/">mprof</a> to monitor this program brute force 10,000 addresses on a 4 logical processor machine with 8GB of RAM. As a result, 4 child processes were created, each consuming 2100MiB of RAM (~2GB).
 
+# Calculation of the probability of finding an address with a balance
+  
+Let's talk about math :
+I've 8 cores running with the program.
+0.0032457721/8 = 0.000405722
+it needs 0.000405722 sec to get one address
+So for one sec, i'll found 2464.741867584 addresses 1/0.000405722
+Convert in one day : 212953697.359275563 addresses a day
+Convert in one month : 6.3886E9
+Convert in one year : 7.7728E10
+There's 2^160 = 1.4615E48 addresses in the whole blockchain. (10^82 = number of atoms in the universe)
+If we divide the number of addresses possible per the number of addresses found in a day : 2^160/212953697.359275563 = 6.863001936×10³⁹
+So It would take 6.863001936×10³⁹ days to find all the address in the blockcahin. But we don't want the whole blockchain. We only want the adresses who are in the database.
+we only have 33M addresses which are interesting .
+In fact, we have 33165253×100÷(1.4615×10⁴⁸)×100 per cent of chance to get an interesting address per day
+Response : I have : 
+2.269258696E-37% chance to get an address per day
+6.8076E-36 per month
+8.2E^-35% per year
+To have 1% chance of having an address, I have to scan 1% of the blockchain = 1,46E46 address
+It would take 1.878E35 year to have 1% chance having an address
+
+these calculations do not take into account the chance, so if you want to use this program, I hope you're lucky in real life.
+
+PS : If you find some faults, i'm open
 # Recent Improvements & TODO
 
 - [X] Fixed typos/formatting
